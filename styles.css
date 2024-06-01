@@ -1,0 +1,46 @@
+.container {
+    height: 100vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000; /* corrected border color */
+}
+
+.hex-colors {
+    border: 1px solid #000; /* corrected border color */
+    text-align: center;
+}
+
+.hex-colors h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorchange 5s infinite alternate; /* corrected animation name */
+}
+
+.hex-colors h2 {
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+@keyframes colorchange { /* corrected keyframes name */
+    0% {
+        color: indigo;
+    }
+    20% {
+        color: blue;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: green;
+    }
+    80% {
+        color: orange;
+    }
+    100% {
+        color: red;
+    }
+}
